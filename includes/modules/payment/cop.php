@@ -42,7 +42,7 @@ class cop {
   function update_status() {
     global $order, $db;
 
-    if ($_SESSION['shipping']['id'] != 'storepickup_storepickup') {
+    if (stristr($_SESSION['shipping']['id'], 'storepickup') == FALSE) {
       $this->enabled = ((MODULE_PAYMENT_COP_STATUS == 'True') ? true : false);
       $check_flag = false;
       $check = $db->Execute("select zone_id from " . TABLE_ZONES_TO_GEO_ZONES . " where geo_zone_id = '" . MODULE_PAYMENT_COP_ZONE . "' and zone_country_id = '" . $order->delivery['country']['id'] . "' order by zone_id");
