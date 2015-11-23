@@ -16,4 +16,3 @@
 
   define('MODULE_PAYMENT_COP_TEXT_TITLE', 'Cash on Pickup');
   define('MODULE_PAYMENT_COP_TEXT_DESCRIPTION', 'Cash on Pickup');
-?>
