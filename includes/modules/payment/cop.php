@@ -20,7 +20,7 @@ class cop {
   var $code, $title, $description, $enabled;
 
 // class constructor
-  function cop() {
+  function __construct() {
     global $order;
 
     $this->code = 'cop';
