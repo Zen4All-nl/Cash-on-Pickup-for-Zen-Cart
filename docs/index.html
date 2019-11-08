@@ -1,0 +1,436 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cash on Pickup 1.2.0 for Zen Cart 1.5.6x</title>
+    <meta name="author" content="Zen4All">
+    <meta name="theme-color" content="#4285f4">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="card bg-light">
+        <div class="card-header">
+          <h1 class="card-title">Cash on Pickup 1.2.0</h1>
+          <div class="pos_rel">
+            <div id="downloads">
+              <a class="zip_download_link" href="https://github.com/Zen4All-nl/Cash-on-Pickup-for-Zen-Cart/archive/master.zip">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Zen4All-nl/Cash-on-Pickup-for-Zen-Cart/tarball/master">Download this project as a tar.gz file</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="nav nav-tabs" id="Tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="installation-tab" data-toggle="tab" href="#installation" role="tab" aria-controls="installation" aria-selected="false">Installation Instructions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="setup-tab" data-toggle="tab" href="#setup" role="tab" aria-controls="setup" aria-selected="false">Configuration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="credits-tab" data-toggle="tab" href="#credits" role="tab" aria-controls="credits" aria-selected="false">Credits & History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="license-tab" data-toggle="tab" href="#license" role="tab" aria-controls="credits" aria-selected="false">License</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="donations-tab" data-toggle="tab" href="#donations" role="tab" aria-controls="donations" aria-selected="false">Donations</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="TabContent">
+            <div class="text-right">
+              <a href="https://www.zen-cart.com/showthread.php?226085-Cash-on-Pickup-Support-Thread" title="Support Thread" target="_blank" class="btn btn-info" role="button">Support Thread</a>
+              <a href="https://github.com/Zen4All-nl/Cash-on-Pickup-for-Zen-Cart" title="View on GitHub" target="_blank" class="btn btn-info" role="button">View on GitHub <i class="fa fa-github fa-lg"></i></a>
+            </div>
+            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+              <p>This module allows you to accept cash on pickup when a customer elects to use the 'Walk in' option at checkout.</p>
+              <p>The option will not display when a customer elects another shipping method.</p>
+            </div>
+            <div class="tab-pane fade" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+              <h2>Installation</h2>
+              <ul class="nav nav-tabs" id="TabInstallation" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="new-install-tab" data-toggle="tab" href="#new-install" role="tab" aria-controls="new-install" aria-selected="true">New install</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="upgrade-tab" data-toggle="tab" href="#upgrade" role="tab" aria-controls="upgrade" aria-selected="false">Upgrade</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="un-install-tab" data-toggle="tab" href="#un-install" role="tab" aria-controls="un-install" aria-selected="false">Un-install</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="file-list-tab" data-toggle="tab" href="#file-list" role="tab" aria-controls="file-list" aria-selected="false">File List</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="TabInstallationContent">
+                <div class="tab-pane fade show active" id="new-install" role="tabpanel" aria-labelledby="new-install-tab">
+                  <h3>New install</h3>
+                  <ol>
+                    <li>If you have any versions prior to v1.2.0 installed, please check the upgrade tab for instructions</li>
+                    <li>Un-zip the package to a folder on your computer</li>
+                    <li>Rename the folder "YOUR_ADMIN" to your actual admin folder name.</li>
+                    <li>Be sure you have logged in to the admin of the store you are copying to, or else you may miss important installation messages.</li>
+                    <li>Copy all files & folders to your server. A list of the files can be found in the tab "File List".</li>
+                    <li>Refresh your admin page in the web-browser</li>
+                    <li>If al is well, you will see a message indicating which version is installed</li>
+                    <li>Cash on Pickup (cop) will now show in "Modules => Payment"</li>
+                  </ol>
+                </div>
+                <div class="tab-pane fade" id="upgrade" role="tabpanel" aria-labelledby="upgrade-tab">
+                  <h3>Upgrade</h3>
+                  <p>Use the list of files in the installation tab for comparison with your current installation, to see if any files have been added, or removed form the package.<br>The easiest way is to use a file comparison program like Beyond Compare, or Winmerge.</p>
+                  <ol>
+                    <li>Be sure you have logged in to the admin of the store you are copying to, or else you may miss important installation messages.</li>
+                    <li>Copy/Merge all files & folders to your server, with the new(er) files found in the tab "File List".</li>
+                    <li>Refresh your admin page in the web-browser</li>
+                    <li>If al is well, you will see a message indicating which version is installed</li>
+                  </ol>
+                </div>
+                <div class="tab-pane fade" id="un-install" role="tabpanel" aria-labelledby="un-install-tab">
+                  <h3>Un-install</h3>
+                  <ul>
+                    <li>Uninstall Cash on Pickup (cop) in "Modules => Payment" of your Zen Cart admin panel</li>
+                    <li>Delete all the files from your server. Use the file list as your guide to see which files to delete.</li>
+                    <li>Run the uninstall.sql in "Tools => Install SQL Patches" of your Zen Cart admin panel</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="file-list" role="tabpanel" aria-labelledby="file-list-tab">
+                  <h3>File List</h3>
+                  <table class="dc" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr class="SectionAll">
+                        <th class="DirItemHeader">Version 1.1.0</th>
+                        <th class="DirItemHeader"></th>
+                        <th class="DirItemHeader">Version 1.2.0</th>
+                        <th class="DirItemHeader">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody><tr class="SectionBegin">
+                        <td class="DirItemDefault"><i class="fa fa-folder-open DirOlderExpanded"></i> includes</td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><i class="fa fa-folder-open DirNewerExpanded"></i> includes</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">├</span><i class="fa fa-folder-open DirSameExpanded"></i> languages</td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">├</span><i class="fa fa-folder-open DirSameExpanded"></i> languages</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">│└</span><i class="fa fa-folder-open DirSameExpanded"></i> english</td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">│└</span><i class="fa fa-folder-open DirSameExpanded"></i> english</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">│&nbsp;└</span><i class="fa fa-folder-open DirSameExpanded"></i> modules</td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">│&nbsp;└</span><i class="fa fa-folder-open DirSameExpanded"></i> modules</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">│&nbsp;&nbsp;└</span><i class="fa fa-folder-open DirSameExpanded"></i> payment</td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">│&nbsp;&nbsp;└</span><i class="fa fa-folder-open DirSameExpanded"></i> payment</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemSame"><span class="text-black">│&nbsp;&nbsp;&nbsp;└</span>cop.php</td>
+                        <td class="DirItemDefault"><img src="images/ContentSame.png" width="28" height="16" alt="<CC>" align="middle"> </td>
+                        <td class="DirItemSame"><span class="text-black">│&nbsp;&nbsp;&nbsp;└</span>cop.php</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">└</span><i class="fa fa-folder-open DirOlderExpanded"></i> modules</td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">└</span><i class="fa fa-folder-open DirNewerExpanded"></i> modules</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;└</span><i class="fa fa-folder-open DirOlderExpanded"></i> payment</td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;└</span><i class="fa fa-folder-open DirNewerExpanded"></i> payment</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemOlder"><span class="text-black">&nbsp;&nbsp;└</span>cop.php</td>
+                        <td class="DirItemDefault"><img src="images/ContentDifferent.png" width="28" height="16" alt="<CC>" align="middle"> </td>
+                        <td class="DirItemNewer"><span class="text-black">&nbsp;&nbsp;└</span>cop.php</td>
+                        <td class="DirItemDefault">Updated</td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><i class="fa fa-folder-open DirOrphanExpanded"></i> YOUR_ADMIN</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">└</span><i class="fa fa-folder-open DirOrphanExpanded"></i> includes</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;├</span><i class="fa fa-folder-open DirOrphanExpanded"></i> auto_loaders</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;│└</span>config.cash_on_pickup.php</td>
+                        <td class="DirItemDefault">New</td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;├</span><i class="fa fa-folder-open DirOrphanExpanded"></i> init_includes</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;│└</span>init_cash_on_pickup.php</td>
+                        <td class="DirItemDefault">New</td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;├</span><i class="fa fa-folder-open DirOrphanExpanded"></i> installers</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;│└</span><i class="fa fa-folder-open DirOrphanExpanded"></i> cash_on_pickup</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;│&nbsp;└</span>1_2_0.php</td>
+                        <td class="DirItemDefault">New</td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;└</span><i class="fa fa-folder-open DirOrphanExpanded"></i> languages</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;└</span><i class="fa fa-folder-open DirOrphanExpanded"></i> english</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionMiddle">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;└</span><i class="fa fa-folder-open DirOrphanExpanded"></i> extra_definitions</td>
+                        <td class="DirItemDefault"></td>
+                      </tr>
+                      <tr class="SectionEnd">
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="DirItemDefault"></td>
+                        <td class="DirItemDefault"><span class="text-black">&nbsp;&nbsp;&nbsp;&nbsp;└</span>cash_on_pickup.php</td>
+                        <td class="DirItemDefault">New</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="setup" role="tabpanel" aria-labelledby="setup-tab">
+              <h2>Configuring Cash on Pickup</h2>
+              <ul>
+                <li>After installation, go to the "Modules => Payment, and click on Coas on Pickup (cop)</li>
+                <li>Click on install</li>
+                <li>Set the necessary fields to your needs</li>
+              </ul>
+              <p>Now you're ready to start editing your color stylesheet. Go to admin > tools, and click on Zen4All Template Color Picker</p>
+            </div>
+            <div class="tab-pane fade" id="credits" role="tabpanel" aria-labelledby="credits-tab">
+              <h2>Version History</h2>
+              <table>
+                <tr>
+                  <td>Version: </td>
+                  <td>&nbsp;</td>
+                  <td>1.2.0</td>
+                </tr>
+                <tr>
+                  <td>Release Date: </td>
+                  <td>&nbsp;</td>
+                  <td>8-11-2019</td>
+                </tr>
+                <tr>
+                  <td>Zen Cart Versions: </td>
+                  <td>&nbsp;</td>
+                  <td>1.5.6</td>
+                </tr>
+                <tr>
+                  <td>Author: </td>
+                  <td>&nbsp;</td>
+                  <td><a href="https://zen4all.nl" target="_blank">Zen4All</a></td>
+                </tr>
+                <tr>
+                  <td>Changes: </td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <ul>
+                      <li>Updated to Zen Cart 1.5.6</li>
+                      <li>Added an auto-installer for version cotrol.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <hr>
+                  </td>
+                </tr>
+                  <td>Version: </td>
+                  <td>&nbsp;</td>
+                  <td>1.1.0</td>
+                </tr>
+                <tr>
+                  <td>Release Date: </td>
+                  <td>&nbsp;</td>
+                  <td>24-10-2016</td>
+                </tr>
+                <tr>
+                  <td>Zen Cart Versions: </td>
+                  <td>&nbsp;</td>
+                  <td>v1.5.0, v1.5.1, v1.5.3, v1.5.4, v1.5.5</td>
+                </tr>
+                <tr>
+                  <td>Author: </td>
+                  <td>&nbsp;</td>
+                  <td><a href="https://zen4all.nl" target="_blank">Zen4All</a></td>
+                </tr>
+                <tr>
+                  <td>Changes: </td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <ul>
+                      <li>Minor update for checking if the module is already installed</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <hr>
+                  </td>
+                </tr>
+                  <td>Version: </td>
+                  <td>&nbsp;</td>
+                  <td>1.0.0</td>
+                </tr>
+                <tr>
+                  <td>Release Date: </td>
+                  <td>&nbsp;</td>
+                  <td>23-11-2015</td>
+                </tr>
+                <tr>
+                  <td>Zen Cart Versions: </td>
+                  <td>&nbsp;</td>
+                  <td>v1.3.8, v1.3.9, v1.5.0, v1.5.1, v1.5.2, v1.5.3, v1.5.4</td>
+                </tr>
+                <tr>
+                  <td>Author: </td>
+                  <td>&nbsp;</td>
+                  <td><a href="https://zen4all.nl" target="_blank">Zen4All</a></td>
+                </tr>
+                <tr>
+                  <td>Changes: </td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <ul>
+                      <li>Updated the code to make the module work with the current Zen Cart version (1.5.4), previous versions, and probably future versions as well.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <hr>
+                  </td>
+                </tr>
+                  <td>Version: </td>
+                  <td>&nbsp;</td>
+                  <td>0.1</td>
+                </tr>
+                <tr>
+                  <td>Release Date: </td>
+                  <td>&nbsp;</td>
+                  <td>27-2-2011</td>
+                </tr>
+                <tr>
+                  <td>Zen Cart Versions: </td>
+                  <td>&nbsp;</td>
+                  <td>1.3.8</td>
+                </tr>
+                <tr>
+                  <td>Author: </td>
+                  <td>&nbsp;</td>
+                  <td>Stephen.Hewitson (at) gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Changes: </td>
+                  <td>&nbsp;</td>
+                  <td>Initial version</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <hr>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="license" role="tabpanel" aria-labelledby="license-tab">
+              <ul>
+                <li>License: GPL 2.0 as per included <a href="../LICENSE" target="_blank">LICENSE</a></li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="donations" role="tabpanel" aria-labelledby="donations-tab">
+              <h2>Donations</h2>
+              <p>Please consider making a donation. With a donation you help me freeing more time for module development.</p>
+              <p>As an extra, I'll donate 25% of your donation to the Zen Cart project.</p>
+              <div>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="V2E6D8CX7DCZL">
+                  <input type="hidden" name="on0" value="Choose an amount for donation">
+                  <div class="form-group row">
+                    <label for="os0" class="col-sm-3 col-form-label">Choose an amount for donation</label>
+                    <div class="col-sm-9 col-md-6">
+                      <select id="os0" name="os0" class="form-control">
+                        <option value="Option 1">€5,00</option>
+                        <option value="Option 2">€10,00</option>
+                        <option value="Option 3">€15,00</option>
+                        <option value="Option 4">€20,00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <input type="hidden" name="currency_code" value="EUR">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-sm-center">Copyright 2019 <a href="https://zen4all.nl" target="_blank">Zen4All</a></div>
+      </div>
+    </div>
+    <script src="jscript/jquery-3.3.1.min.js"></script>
+    <script src="jscript/popper.min.js"></script>
+    <script src="jscript/bootstrap.min.js"></script>
+  </body>
+</html>
